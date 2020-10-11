@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title> Chartyr </title>
+	</head>
+	<body style="font-family: 'Lucida Console', Monaco, monospace">
+		<canvas style="border: 2px solid grey;" id="graph_canvas" width="700" height="700"></canvas><br/>
+		<details style="border: 1px solid black" open>
+			<summary> functions </summary>
+			<a id="in_funcs">
+				<!--<input id="in_func" type="text" value="y = sin(x)"></input><button id="in_funcdel">-</button><br id="in_funcbr" />-->
+			</a>
+			<button onclick="addFunc()">+</button>
+		</details>
+		precision: <input onchange="onSubmit()" id="in_prec" type="number" step="0.1" value="1"></input><br/>
+		<details style="border: 1px solid black">
+			<summary>manual movement/zoom</summary>
+			xmin: <input onchange="onSubmit()" id="in_xmin" type="number" step="0.1" value="-3"></input><br/>
+			xmax: <input onchange="onSubmit()" id="in_xmax" type="number" step="0.1" value="15"></input><br/>
+			ymin: <input onchange="onSubmit()" id="in_ymin" type="number" step="0.1" value="-2.5"></input><br/>
+			ymax: <input onchange="onSubmit()" id="in_ymax" type="number" step="0.1" value="2.5"></input><br/>
+		</details>
+		<details style="border: 1px solid black">
+			<summary> additional options </summary>
+			x unit mark: <input onchange="onSubmit()" id="in_xunitmark" type="number" step="0.1" value="1"></input><br/>
+			y unit mark: <input onchange="onSubmit()" id="in_yunitmark" type="number" step="0.1" value="1"></input><br/>
+			canvas width: <input onchange="onSubmit()" id="in_canvwidth" type="number" step="0.1" value="700"></input><br/>
+			canvas height: <input onchange="onSubmit()" id="in_canvheight" type="number" step="0.1" value="700"></input><br/>
+		</details>
+		<input id="in_ymax" type="submit" value="Calculate" onclick="onSubmit()"></input><br/><br/>
+		<script type="text/javascript" src="main.js"></script>
+		<h1 style="color: grey;font-size: 10px;">abam iksde</h1>
+	</body>
+</html>
